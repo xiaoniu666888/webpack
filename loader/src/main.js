@@ -1,3 +1,5 @@
+import './component/cpn.js'
+
 function sum(a, b) {
     return a + b
 }
