@@ -1,4 +1,6 @@
 const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 // 导出配置信息
 module.exports = {
@@ -7,6 +9,11 @@ module.exports = {
     output: {
         filename: "bulid.js",
         path: path.resolve(__dirname, "./dist")
+    },
+    devServer: {
+        hot: true,
+        // host: "0.0.0.0",
+        port: 8888
     },
     module: {
         rules: [
@@ -21,5 +28,14 @@ module.exports = {
                 ]
             }
         ]
-    }
+    },
+    plugins: [
+        new CleanWebpackPlugin(),
+        new HtmlWebpackPlugin({
+            title: "webpack",
+            template: "./index.html"
+        })
+
+
+    ]
 }
