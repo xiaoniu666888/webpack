@@ -17,9 +17,10 @@ module.exports = {
                     loader: "babel-loader",
                     options: {
                         presets: [
-                            ["@babel/preset-env", {
-                                targets: ">0.1%"
-                            }]
+                            // ["@babel/preset-env", {
+                            //     targets: ">0.1%"
+                            // }]
+                            "@babel/preset-env"
                         ]
                     }
                 }
