@@ -2,6 +2,12 @@
 
 ## 安装
 
+```javascript
+// test
+const name = "火星人"
+console.log(name)
+```
+
 ```shell
 npm i pm2 -g
 ```

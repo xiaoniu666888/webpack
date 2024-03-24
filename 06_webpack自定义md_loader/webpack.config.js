@@ -29,6 +29,14 @@ module.exports = {
                         loader: "xnmd_loader.js"
                     }
                 ]
+            },
+            // css
+            {
+                test: /\.css$/,
+                use: [
+                    "style-loader",
+                    "css-loader"
+                ]
             }
         ]
     },
