@@ -7,7 +7,8 @@ module.exports = {
     devtool: false,
     output: {
         path: path.resolve(__dirname, "./dist"),
-        filename: "bundle.js"
+        filename: "bundle.js",
+        clean: true
     },
     resolveLoader: {
         modules: ["./loader", "node_modules"]
